@@ -1,9 +1,162 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-stretch: 2%;
+  font-weight: 400;
+  font-style: normal;
   color: #434455;
   background-color: #ffffff;
 }
 
 li {
   list-style-type: none; /* Прибираємо маркери */
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.card-filling {
+  fill: #ffffff;
+}
+
+.border-card-portfolio {
+  border-width: 1px;
+  border-color: #e7e9fc;
+}
+
+.shadow-card-portfolio {
+  box-shadow: 0px 1px 6px 0px #ffffff;
+  opacity: 8%;
+}
+
+.shadow-card-team-1 {
+  box-shadow: 0px 1px 6px 0px #2e2f42;
+  opacity: 8%;
+  box-shadow: 0px 1px 1px 0px #2e2f42;
+  opacity: 16%;
+  box-shadow: 0px 2px 1px 0px #2e2f42;
+  opacity: 8%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  width: 1158px;
+}
+
+.rectangle-header {
+  width: 1440px;
+  height: 72px;
+  background: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-color: #e7e9fc;
+}
+
+.rectangle-effective {
+  width: 1440px;
+  height: 600px;
+  background: #2e2f42;
+}
+
+.rectangle-team {
+  width: 1440px;
+  height: 732px;
+  background: #f4f4fd;
+}
+
+.rectangle-footer {
+  width: 1440px;
+  height: 312px;
+  background: #2e2f42;
+}
+
+.input {
+  margin-bottom: 36px;
+  width: 75px;
+}
+
+.header-1-bold {
+  font-family: 'Roboto', sans-serif;
+  font-size: 56px;
+  line-height: 60px;
+  font-stretch: 2%;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.header-2-bold {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-stretch: 2%;
+  font-weight: 700;
+  font-style: normal;
+  color: #2e2f42;
+}
+
+.header-3-medium {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-stretch: 2%;
+  font-weight: 500;
+  font-style: normal;
+  color: #2e2f42;
+}
+
+.body-cloud-regular {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-stretch: 2%;
+  font-weight: 400;
+  font-style: normal;
+  color: #f4f4fd;
+}
+
+.body-medium-nav-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-stretch: 2%;
+  font-weight: 500;
+  font-style: normal;
+  color: #2e2f42;
+}
+
+.button-medium {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-stretch: 4%;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.raleway-logo-blue {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-stretch: 3%;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #2e2f42;
+}
+
+.raleway-logo-iris {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-stretch: 3%;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #4d5ae5;
 }
