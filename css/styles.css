@@ -1,143 +1,61 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-stretch: 2%;
   font-weight: 400;
-  font-style: normal;
   color: #434455;
   background-color: #ffffff;
 }
 
-li {
-  list-style-type: none; /* Прибираємо маркери */
+/* nav-menu-header є інтерактивним елементом, кнопки-тексти*/
+.nav-menu-header {
+  font-weight: 500;
+  color: #2e2f42;
 }
 
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+/* nav-adress-header є інтерактивним елементом, телефон і пошта*/
+.nav-adress-header {
+  color: #2e2f42;
 }
 
-.card-filling {
-  fill: #ffffff;
+/* button є інтерактивним елементом */
+.button {
+  font-stretch: 4%;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-.border-card-portfolio {
-  border-width: 1px;
-  border-color: #e7e9fc;
-}
-
-.shadow-card-portfolio {
-  box-shadow: 0px 1px 6px 0px #ffffff;
-  opacity: 8%;
-}
-
-.shadow-card-team-1 {
-  box-shadow: 0px 1px 6px 0px #2e2f42;
-  opacity: 8%;
-  box-shadow: 0px 1px 1px 0px #2e2f42;
-  opacity: 16%;
-  box-shadow: 0px 2px 1px 0px #2e2f42;
-  opacity: 8%;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  align-content: center;
-  width: 1158px;
-}
-
-.rectangle-header {
-  width: 1440px;
-  height: 72px;
-  background: #ffffff;
-  border-bottom-width: 1px;
-  border-bottom-color: #e7e9fc;
-}
-
-.rectangle-effective {
-  width: 1440px;
-  height: 600px;
-  background: #2e2f42;
-}
-
-.rectangle-team {
-  width: 1440px;
-  height: 732px;
-  background: #f4f4fd;
-}
-
-.rectangle-footer {
-  width: 1440px;
-  height: 312px;
-  background: #2e2f42;
-}
-
-.input {
-  margin-bottom: 36px;
-  width: 75px;
-}
-
-.header-1-bold {
-  font-family: 'Roboto', sans-serif;
+.header-1 {
   font-size: 56px;
   line-height: 60px;
   font-stretch: 2%;
   font-weight: 700;
-  font-style: normal;
   color: #ffffff;
 }
 
-.header-2-bold {
-  font-family: 'Roboto', sans-serif;
+.header-2 {
   font-size: 36px;
   line-height: 40px;
   font-stretch: 2%;
   font-weight: 700;
-  font-style: normal;
   color: #2e2f42;
 }
 
-.header-3-medium {
-  font-family: 'Roboto', sans-serif;
+.header-3 {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   font-stretch: 2%;
   font-weight: 500;
-  font-style: normal;
   color: #2e2f42;
 }
 
-.body-cloud-regular {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-stretch: 2%;
-  font-weight: 400;
-  font-style: normal;
+.footer-text {
   color: #f4f4fd;
 }
 
-.body-medium-nav-header {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-stretch: 2%;
-  font-weight: 500;
-  font-style: normal;
-  color: #2e2f42;
-}
 
-.button-medium {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-stretch: 4%;
-  font-weight: 500;
-  font-style: normal;
-  color: #ffffff;
-}
+
 
 .raleway-logo-blue {
   font-family: 'Raleway', sans-serif;
@@ -145,7 +63,7 @@ li {
   line-height: 21px;
   font-stretch: 3%;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   color: #2e2f42;
 }
@@ -156,7 +74,16 @@ li {
   line-height: 21px;
   font-stretch: 3%;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   color: #4d5ae5;
 }
+
+
+raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
