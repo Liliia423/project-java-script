@@ -8,18 +8,26 @@ body {
   background-color: #ffffff;
 }
 
-/* nav-menu-header є інтерактивним елементом, кнопки-тексти*/
-.nav-menu-header {
+/* Прибираємо маркери */
+li {
+  list-style-type: none;
+}
+
+/* link-menu оформлює кнопки-тексти*/
+.link-menu {
   font-weight: 500;
   color: #2e2f42;
+  text-decoration: none;
 }
 
-/* nav-adress-header є інтерактивним елементом, телефон і пошта*/
-.nav-adress-header {
+/* contacts оформлює телефон і пошту*/
+.link-contact {
+  font-style: normal;
   color: #2e2f42;
+  text-decoration: none;
 }
 
-/* button є інтерактивним елементом */
+/* button оформлює кнопку Call To Action */
 .button {
   font-stretch: 4%;
   font-weight: 500;
@@ -50,40 +58,42 @@ body {
   color: #2e2f42;
 }
 
+/* текст у футері */
 .footer-text {
   color: #f4f4fd;
 }
 
+/* оформлення логотопу */
 
-
-
-.raleway-logo-blue {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-stretch: 3%;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: #2e2f42;
+.logotype-header {
 }
 
-.raleway-logo-iris {
+.logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-stretch: 3%;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #4d5ae5;
 }
 
-
-raleway-<uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+.logo-part-header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-stretch: 3%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2e2f42;
 }
 
+.logo-part-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-stretch: 3%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f4f4fd;
+}
