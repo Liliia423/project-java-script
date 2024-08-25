@@ -23,14 +23,12 @@ li {
   font-weight: 500;
   color: #2e2f42;
   text-decoration: none;
-  letter-spacing: 0.02em;
 }
 
 .menu-links .link:hover,
 .menu-links .link:focus {
   font-weight: 500;
   color: #404bbf;
-  letter-spacing: 0.02em;
 }
 
 .menu-links .link:active {
