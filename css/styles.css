@@ -37,18 +37,21 @@ li {
   font-weight: 500;
   color: #404bbf;
   text-decoration: underline;
+  letter-spacing: 0.02em;
 }
 
 .ad-links .link {
   color: #434455;
   font-style: normal;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 .ad-links .link:hover,
 .ad-links .link:focus {
   color: #404bbf;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 /* button оформлює текст кнопки Call To Action і кнопку */
@@ -73,7 +76,8 @@ li {
   background-color: #404bbf;
 }
 
-.header-1 {
+.h1 {
+  /* секція 1 */
   font-size: 56px;
   line-height: 1.07;
   font-stretch: 2%;
@@ -83,7 +87,11 @@ li {
   color: #ffffff;
 }
 
-.header-2 {
+.section-1 {
+  background-color: #2e2f42;
+}
+
+.h2 {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -94,7 +102,7 @@ li {
   color: #2e2f42;
 }
 
-.header-3 {
+.h3 {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -102,6 +110,18 @@ li {
   font-stretch: 2%;
   font-weight: 500;
   color: #2e2f42;
+}
+
+.section-2 {
+  background-color: #ffffff;
+}
+
+.section-3 {
+  background-color: #f4f4fd;
+}
+
+.section-4 {
+  background-color: #ffffff;
 }
 
 /* текст у футері */
@@ -144,24 +164,8 @@ li {
   color: #f4f4fd;
 }
 
-.section-1 {
-  background-color: #2e2f42;
-}
-
-.section-2 {
-  background-color: #ffffff;
-}
-
 .text {
   letter-spacing: 0.02em;
-}
-
-.section-3 {
-  background-color: #f4f4fd;
-}
-
-.section-4 {
-  background-color: #ffffff;
 }
 
 .footer {
