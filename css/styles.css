@@ -4,6 +4,7 @@ body {
   line-height: 1.5;
   font-stretch: 2%;
   font-weight: 400;
+  font-style: normal;
   color: #434455;
   background-color: #ffffff;
 }
@@ -13,25 +14,60 @@ li {
   list-style-type: none;
 }
 
-/* link-menu оформлює кнопки-тексти*/
-.link-menu {
+/* оформлює кнопки-тексти*/
+.menu {
   font-weight: 500;
   color: #2e2f42;
   text-decoration: none;
 }
 
-/* contacts оформлює телефон і пошту*/
-.link-contact {
-  font-style: normal;
+.menu:hover {
+  font-weight: 500;
+  color: #404bbf;
+}
+
+/* оформлює кнопки-тексти */
+.menu-1 {
+  font-weight: 500;
   color: #2e2f42;
   text-decoration: none;
 }
 
-/* button оформлює кнопку Call To Action */
+.menu-1:hover {
+  font-weight: 500;
+  color: #404bbf;
+}
+
+.menu-1:active {
+  font-weight: 500;
+  color: #404bbf;
+  text-decoration: underline;
+}
+
+.mail-tel {
+  font-style: normal;
+  text-decoration: none;
+  color: #434455;
+}
+
+.mail-tel:hover {
+  color: #404bbf;
+}
+
+/* button оформлює текст кнопки Call To Action і кнопку */
 .button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   font-stretch: 4%;
   font-weight: 500;
   color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+}
+
+.button:hover {
+  background-color: #404bbf;
 }
 
 .header-1 {
@@ -64,9 +100,6 @@ li {
 }
 
 /* оформлення логотопу */
-
-.logotype-header {
-}
 
 .logo {
   font-family: 'Raleway', sans-serif;
