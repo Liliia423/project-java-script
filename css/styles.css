@@ -54,6 +54,10 @@ li {
   color: #404bbf;
 }
 
+.mail-tel:focus {
+  color: #404bbf;
+}
+
 /* button оформлює текст кнопки Call To Action і кнопку */
 .button {
   font-family: 'Roboto', sans-serif;
@@ -61,6 +65,7 @@ li {
   line-height: 1.5;
   font-stretch: 4%;
   font-weight: 500;
+  cursor: pointer;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
