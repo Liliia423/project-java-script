@@ -76,8 +76,7 @@ li {
   background-color: #404bbf;
 }
 
-.h1 {
-  /* секція 1 */
+.hh1 {
   font-size: 56px;
   line-height: 1.07;
   font-stretch: 2%;
@@ -91,7 +90,7 @@ li {
   background-color: #2e2f42;
 }
 
-.h2 {
+.hh2 {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -102,7 +101,7 @@ li {
   color: #2e2f42;
 }
 
-.h3 {
+.hh3 {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -112,16 +111,12 @@ li {
   color: #2e2f42;
 }
 
-.section-2 {
+.section-2-4 {
   background-color: #ffffff;
 }
 
 .section-3 {
   background-color: #f4f4fd;
-}
-
-.section-4 {
-  background-color: #ffffff;
 }
 
 /* текст у футері */
