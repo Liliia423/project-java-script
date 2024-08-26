@@ -9,16 +9,26 @@ body {
   background-color: #ffffff;
 }
 
-/* Прибираємо маркери */
+/* Прибирає маркери */
 li {
   list-style-type: none;
+}
+
+/* текст у футері */
+.footer-text {
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  letter-spacing: 0.02em;
 }
 
 .address {
   font-style: normal;
 }
 
-/* оформлює кнопки-тексти в меню хедера*/
+/* оформлює кнопки-тексти в меню хедера */
 .menu-links .link {
   font-weight: 500;
   color: #2e2f42;
@@ -40,6 +50,7 @@ li {
   letter-spacing: 0.02em;
 }
 
+/* оформлює адресу і телефон в меню хедера */
 .ad-links .link {
   color: #434455;
   font-style: normal;
@@ -54,7 +65,6 @@ li {
   letter-spacing: 0.02em;
 }
 
-/* button оформлює текст кнопки Call To Action і кнопку */
 .button {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -68,15 +78,13 @@ li {
   border: none;
 }
 
-.button:hover {
-  background-color: #404bbf;
-}
-
+.button:hover,
 .button:focus {
   background-color: #404bbf;
 }
 
-.h-1 {
+.hdr-1 {
+  /* Заголовок H1 типографіка */
   font-size: 56px;
   line-height: 1.07;
   font-stretch: 2%;
@@ -86,11 +94,8 @@ li {
   color: #ffffff;
 }
 
-.section-1 {
-  background-color: #2e2f42;
-}
-
-.h2 {
+.hdr-2 {
+  /* Заголовок H2 типографіка */
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -101,7 +106,8 @@ li {
   color: #2e2f42;
 }
 
-.h3 {
+.hdr-3 {
+  /* Заголовок H3 типографіка */
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -109,6 +115,10 @@ li {
   font-stretch: 2%;
   font-weight: 500;
   color: #2e2f42;
+}
+
+.section-1 {
+  background-color: #2e2f42;
 }
 
 .section-2 {
@@ -123,14 +133,7 @@ li {
   background-color: #ffffff;
 }
 
-/* текст у футері */
-.footer-text {
-  color: #f4f4fd;
-  letter-spacing: 0.02em;
-}
-
 /* оформлення логотопу */
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -161,10 +164,6 @@ li {
   text-transform: uppercase;
   text-decoration: none;
   color: #f4f4fd;
-}
-
-.text {
-  letter-spacing: 0.02em;
 }
 
 .footer {
