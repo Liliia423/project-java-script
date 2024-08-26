@@ -83,7 +83,7 @@ li {
   background-color: #404bbf;
 }
 
-.hdr-1 {
+.hdr-one {
   /* Заголовок H1 типографіка */
   font-size: 56px;
   line-height: 1.07;
@@ -94,7 +94,7 @@ li {
   color: #ffffff;
 }
 
-.hdr-2 {
+.hdr-two {
   /* Заголовок H2 типографіка */
   font-size: 36px;
   line-height: 1.11;
@@ -106,7 +106,7 @@ li {
   color: #2e2f42;
 }
 
-.hdr-3 {
+.hdr-three {
   /* Заголовок H3 типографіка */
   font-size: 20px;
   line-height: 1.2;
@@ -117,19 +117,19 @@ li {
   color: #2e2f42;
 }
 
-.section-1 {
+.section-one {
   background-color: #2e2f42;
 }
 
-.section-2 {
+.section-two {
   background-color: #ffffff;
 }
 
-.section-3 {
+.section-three {
   background-color: #f4f4fd;
 }
 
-.section-4 {
+.section-four {
   background-color: #ffffff;
 }
 
