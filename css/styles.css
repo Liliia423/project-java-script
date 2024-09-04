@@ -23,13 +23,12 @@
   text-decoration: none;
   color: #4d5ae5;
   display: flex; /* Створюємо флекс-контейнер для логотипа у хедері */
-  padding: 24px 0;
 }
 
-/* Створюємо флекс-контейнер для елементів меню у хедері, padding-right: 40px вже задано */
+/* Створюємо флекс-контейнер для елементів меню у хедері, padding-right: 40px замінюємо на gap */
 .menu-links {
   display: flex;
-  padding: 24px 0;
+  gap: 40px;
 }
 
 /* Створюємо флекс-контейнер для "елементів меню + логотип" у хедері */
@@ -39,18 +38,8 @@
 }
 
 .ad-links {
-  display: flex; /* Створюємо флекс-контейнер для елементів адреси у хедері, padding-right: 40px вже задано */
-  padding: 24px 0;
-}
-
-/* Створюємо флекс-контейнер для всього хедера */
-.container-hdr {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 141px;
-  margin-right: 141px;
-  display: flex;
+  display: flex; /* Створюємо флекс-контейнер для елементів адреси у хедері, padding-right: 40px замінюємо на gap */
+  gap: 40px;
 }
 
 body {
@@ -86,7 +75,6 @@ li {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
-  padding-right: 40px;
 }
 
 .menu-links .link:hover,
@@ -114,7 +102,6 @@ li {
   text-decoration: none;
   letter-spacing: 0.02em;
   display: block;
-  padding-right: 40px;
 }
 
 .ad-links .link:hover,
