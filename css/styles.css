@@ -1,131 +1,23 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Секція 3 */
-
-.container {
-  /* + контейнер для 3 секції*/
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 141px;
-  margin-right: 141px;
-}
-
-.h3-and-text {
-  /* + Секція 3 об'єднано заголовок h3 і текс */
-  display: flex;
-  max-width: 232px;
-  gap: 8px;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 32px;
-  padding-left: 16px;
-}
-
-.peoples-photo {
-  /* + секція 3 фото людини */
-  object-fit: cover;
-}
-
-.peoples-card {
-  /* + секція 3 фото, піб і посада */
-  display: flex;
-  gap: 32px;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-stretch: 2%;
+  font-weight: 400;
+  font-style: normal;
+  color: #434455;
   background-color: #ffffff;
-  width: 264px;
 }
 
-.team-card {
-  /* + секція 3 вирівнювання карток у ряд */
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
+li {
+  list-style-type: none;
 }
 
-.hdr-three {
-  /* Заголовок H3 типографіка */
-  font-size: 20px;
-  line-height: 1.2;
+.text {
   letter-spacing: 0.02em;
-  text-align: center;
-  font-stretch: 2%;
-  font-weight: 500;
-  color: #2e2f42;
 }
-
-/*Закінчення 3 секції */
-
-/* 4 секція */
-
-.hdr-three-port {
-  /* Секція 4 Заголовок H3 типографіка */
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: left;
-  font-stretch: 2%;
-  font-weight: 500;
-  color: #2e2f42;
-  padding-left: 16px;
-  padding-top: 32px;
-}
-
-.text-port {
-  letter-spacing: 0.02em;
-  padding-left: 16px;
-}
-
-.h3-and-text-port {
-  /* об'єднано заголовок h3 і текс у 4 секції */
-  display: flex;
-  width: 360px;
-  gap: 8px;
-  flex-direction: column;
-  padding-bottom: 32px;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-}
-.card-proposition {
-  /* секція 4 вирівнювання карток у ряд */
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-
-.portfolio-card {
-  /* секція 4 фото, підписи */
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-photos {
-  /* секція 4 фото портфоліо */
-  object-fit: cover;
-}
-
-.container-section-one {
-  display: flex;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 141px;
-  margin-right: 141px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-one .container-section-one {
-  align-content: center;
-}
-
-.container-hdr {
+/*хедер-початок*/
+.hdr-container {
   display: flex;
   max-width: 1158px;
   padding-left: 15px;
@@ -133,20 +25,6 @@
   margin-left: 141px;
   margin-right: 141px;
   justify-content: space-between;
-}
-
-.advantages-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.advantages-set .item {
-  width: calc((100% - 72px) / 4);
-}
-
-.advantages-set .item .hdr-three {
-  text-align: left;
 }
 
 .logo {
@@ -160,54 +38,27 @@
   text-decoration: none;
   color: #4d5ae5;
   display: flex; /* Створюємо флекс-контейнер для логотипа у хедері */
-  align-items: center;
+  align-items: center; /*вирівнювання по вертикалі*/
 }
 
-/* Створюємо флекс-контейнер для елементів меню у хедері, padding-right: 40px замінюємо на gap */
 .menu-links {
+  /* Створюємо флекс-контейнер для елементів меню у хедері, padding-right: 40px замінюємо на gap */
   display: flex;
   gap: 40px;
 }
 
-/* Створюємо флекс-контейнер для "елементів меню + логотип" у хедері */
-.nav-logo-container {
-  display: flex;
-  gap: 76px; /* Відстань між логотипом і блоком меню = 76px по макету */
-  padding: 24px 0;
-}
-
-.ad-links {
-  display: flex; /* Створюємо флекс-контейнер для елементів адреси у хедері, padding-right: 40px замінюємо на gap */
-  gap: 40px;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-stretch: 2%;
-  font-weight: 400;
-  font-style: normal;
-  color: #434455;
-  background-color: #ffffff;
-}
-
-/* Прибирає маркери */
-li {
-  list-style-type: none;
-}
-
-.text {
-  letter-spacing: 0.02em;
-}
-
-/* оформлює кнопки-тексти в меню хедера */
 .menu-links .link {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
+}
+
+.nav-container {
+  display: flex;
+  gap: 76px; /* Відстань між логотипом і блоком меню = 76px по макету */
+  padding: 24px 0;
 }
 
 .menu-links .link:hover,
@@ -217,6 +68,11 @@ li {
   letter-spacing: 0.02em;
 }
 
+.address {
+  font-style: normal;
+  padding: 24px 0;
+}
+
 .menu-links .link:active {
   font-weight: 500;
   color: #404bbf;
@@ -224,12 +80,11 @@ li {
   letter-spacing: 0.02em;
 }
 
-.address {
-  font-style: normal;
-  padding: 24px 0;
+.ad-links {
+  display: flex; /* Створюємо флекс-контейнер для елементів адреси у хедері, padding-right: 40px замінюємо на gap */
+  gap: 40px;
 }
 
-/* оформлює адресу і телефон в меню хедера */
 .ad-links .link {
   color: #434455;
   font-style: normal;
@@ -243,6 +98,41 @@ li {
   color: #404bbf;
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+/*хедер кінець*/
+
+/*секція-1-початок*/
+.section-one {
+  background-color: #2e2f42;
+  padding: 120px 0;
+  border-top: 1px solid #e7e9fc;
+}
+
+.hdr-one {
+  font-size: 56px;
+  line-height: 1.07;
+  font-stretch: 2%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+  max-width: 496px;
+}
+
+.section-one .container-section-one {
+  align-content: center;
+}
+
+.container-section-one {
+  display: flex;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right: 141px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -265,22 +155,35 @@ li {
 .button:focus {
   background-color: #404bbf;
 }
+/*секція-1-кінець*/
 
-.hdr-one {
-  /* Заголовок H1 типографіка */
-  font-size: 56px;
-  line-height: 1.07;
-  font-stretch: 2%;
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-weight: 700;
-  color: #ffffff;
-  display: block;
-  max-width: 496px;
+/*секція-2-початок*/
+.advantages-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.advantages-set .item {
+  width: calc((100% - 72px) / 4);
+}
+
+.advantages-set .item .hdr-three {
+  text-align: left;
+}
+.section-two {
+  background-color: #ffffff;
+  padding: 120px 0;
+}
+/*секція-2-кінець*/
+
+/*секція-3-початок */
+.section-three {
+  background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .hdr-two {
-  /* Заголовок H2 типографіка */
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -292,27 +195,97 @@ li {
   padding-bottom: 72px;
 }
 
-.section-one {
-  background-color: #2e2f42;
-  padding: 120px 0;
-  border-top: 1px solid #e7e9fc;
+.peoples-photo {
+  object-fit: cover;
 }
 
-.section-two {
+.hdr-three {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-stretch: 2%;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.h3-and-text {
+  display: flex;
+  max-width: 232px;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+.peoples-card {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
-  padding: 120px 0;
+  width: 264px;
 }
 
-.section-three {
-  background-color: #f4f4fd;
-  padding: 120px 0;
+.team-card {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
+/*секція-3-кінець */
 
+/*секція-4-початок*/
 .section-four {
   background-color: #ffffff;
   padding: 120px 0;
 }
 
+.hdr-three-port {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-stretch: 2%;
+  font-weight: 500;
+  color: #2e2f42;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+
+.text-port {
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+}
+
+.portfolio-photos {
+  object-fit: cover;
+}
+
+.h3-and-text-port {
+  display: flex;
+  width: 360px;
+  gap: 8px;
+  flex-direction: column;
+  padding-bottom: 32px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.portfolio-card {
+  /* фотографія і опис */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-proposition {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+/*футер-початок*/
 .logo-part-header {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -338,14 +311,24 @@ li {
   padding: 120px 0;
 }
 
-/* текст у футері */
 .footer-text {
+  /* текст у футері */
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+  padding-top: 16px;
 }
 
 .container-footer {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right: 141px;
+}
+/*футер-кінець*/
+
+.container {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
