@@ -13,11 +13,16 @@
 }
 
 .container-section-one {
+  display: flex;
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 141px;
   margin-right: 141px;
+  flex-direction: column;
+}
+.container-section-one .hdr-one {
+  text-align: center;
 }
 
 .container-hdr {
@@ -28,6 +33,20 @@
   margin-left: 141px;
   margin-right: 141px;
   justify-content: space-between;
+}
+
+.advantages-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.advantages-set .item {
+  width: 264px;
+}
+
+.advantages-set .item .hdr-three {
+  text-align: left;
 }
 
 .logo {
@@ -41,6 +60,7 @@
   text-decoration: none;
   color: #4d5ae5;
   display: flex; /* Створюємо флекс-контейнер для логотипа у хедері */
+  align-items: center;
 }
 
 /* Створюємо флекс-контейнер для елементів меню у хедері, padding-right: 40px замінюємо на gap */
@@ -142,6 +162,9 @@ li {
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
+  max-width: fit-content;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 
 .button:hover,
@@ -158,7 +181,8 @@ li {
   letter-spacing: 0.02em;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 48px;
+  display: block;
+  max-width: 496px;
 }
 
 .hdr-two {
