@@ -12,6 +12,76 @@
   margin-right: 141px;
 }
 
+.card-proposition {
+  /* секція 4 вирівнювання карток у ряд */
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  /* секція 4 фото, підписи */
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+/* Секція 3 */
+
+.team-card {
+  /* секція 3 вирівнювання карток у ряд */
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.item-ground {
+  /* секція 3 параметри контейнера для картки */
+  background-color: #ffffff;
+  width: 264px;
+}
+
+.h3-and-text-port {
+  /* об'єднано заголовок h3 і текс у 4 секції */
+  display: flex;
+  max-width: 232px;
+  gap: 8px;
+  flex-direction: column;
+  padding-bottom: 32px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.h3-and-text {
+  /* об'єднано заголовок h3 і текс */
+  display: flex;
+  max-width: 232px;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.peoples-card {
+  /* секція 3 фото, піб і посада */
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.peoples-photo {
+  /* секція 3 фото людини */
+  object-fit: cover;
+}
+
+.portfolio-photos {
+  /* секція 4 фото портфоліо */
+  object-fit: cover;
+}
+
 .container-section-one {
   display: flex;
   max-width: 1158px;
@@ -19,10 +89,13 @@
   padding-right: 15px;
   margin-left: 141px;
   margin-right: 141px;
+
   flex-direction: column;
+  align-items: center;
 }
-.container-section-one .hdr-one {
-  text-align: center;
+
+.section-one .container-section-one {
+  align-content: center;
 }
 
 .container-hdr {
@@ -42,7 +115,7 @@
 }
 
 .advantages-set .item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 
 .advantages-set .item .hdr-three {
@@ -95,12 +168,6 @@ body {
 /* Прибирає маркери */
 li {
   list-style-type: none;
-}
-
-/* текст у футері */
-.footer-text {
-  color: #f4f4fd;
-  letter-spacing: 0.02em;
 }
 
 .text {
@@ -195,6 +262,7 @@ li {
   text-transform: capitalize;
   font-weight: 700;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .hdr-three {
@@ -229,10 +297,6 @@ li {
   padding: 120px 0;
 }
 
-.item-ground {
-  background-color: #ffffff;
-}
-
 .logo-part-header {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -255,4 +319,20 @@ li {
 
 .footer {
   background-color: #2e2f42;
+  padding: 120px 0;
+}
+
+/* текст у футері */
+.footer-text {
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.container-footer {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right: 141px;
 }
