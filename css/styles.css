@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
+/* Секція 3 */
+
 .container {
+  /* + контейнер для 3 секції*/
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -12,40 +15,76 @@
   margin-right: 141px;
 }
 
-.card-proposition {
-  /* секція 4 вирівнювання карток у ряд */
+.h3-and-text {
+  /* + Секція 3 об'єднано заголовок h3 і текс */
   display: flex;
-  flex-direction: row;
-  gap: 24px;
-  flex-wrap: wrap;
+  max-width: 232px;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
-.portfolio-card {
-  /* секція 4 фото, підписи */
+.peoples-photo {
+  /* + секція 3 фото людини */
+  object-fit: cover;
+}
+
+.peoples-card {
+  /* + секція 3 фото, піб і посада */
   display: flex;
   gap: 32px;
   flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 264px;
 }
 
-/* Секція 3 */
-
 .team-card {
-  /* секція 3 вирівнювання карток у ряд */
+  /* + секція 3 вирівнювання карток у ряд */
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
 
-.item-ground {
-  /* секція 3 параметри контейнера для картки */
-  background-color: #ffffff;
-  width: 264px;
+.hdr-three {
+  /* Заголовок H3 типографіка */
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-stretch: 2%;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+/*Закінчення 3 секції */
+
+/* 4 секція */
+
+.hdr-three-port {
+  /* Секція 4 Заголовок H3 типографіка */
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-stretch: 2%;
+  font-weight: 500;
+  color: #2e2f42;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+
+.text-port {
+  letter-spacing: 0.02em;
+  padding-left: 16px;
 }
 
 .h3-and-text-port {
   /* об'єднано заголовок h3 і текс у 4 секції */
   display: flex;
-  max-width: 232px;
+  width: 360px;
   gap: 8px;
   flex-direction: column;
   padding-bottom: 32px;
@@ -53,28 +92,17 @@
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
 }
-
-.h3-and-text {
-  /* об'єднано заголовок h3 і текс */
+.card-proposition {
+  /* секція 4 вирівнювання карток у ряд */
   display: flex;
-  max-width: 232px;
-  gap: 8px;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 32px;
+  flex-direction: row;
+  gap: 24px;
 }
 
-.peoples-card {
-  /* секція 3 фото, піб і посада */
+.portfolio-card {
+  /* секція 4 фото, підписи */
   display: flex;
-  gap: 32px;
   flex-direction: column;
-  align-items: center;
-}
-
-.peoples-photo {
-  /* секція 3 фото людини */
-  object-fit: cover;
 }
 
 .portfolio-photos {
@@ -89,7 +117,6 @@
   padding-right: 15px;
   margin-left: 141px;
   margin-right: 141px;
-
   flex-direction: column;
   align-items: center;
 }
@@ -263,17 +290,6 @@ li {
   font-weight: 700;
   color: #2e2f42;
   padding-bottom: 72px;
-}
-
-.hdr-three {
-  /* Заголовок H3 типографіка */
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  font-stretch: 2%;
-  font-weight: 500;
-  color: #2e2f42;
 }
 
 .section-one {
