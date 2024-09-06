@@ -54,7 +54,6 @@ li {
 
 .nav-container {
   display: flex;
-  margin: 0 auto;
   align-items: center;
 }
 
@@ -77,7 +76,7 @@ li {
 }
 
 .ad-links {
-  display: flex; /* Створюємо флекс-контейнер для елементів адреси у хедері, padding-right: 40px замінюємо на gap */
+  display: flex;
   align-items: center;
   gap: 40px;
 }
@@ -116,6 +115,7 @@ li {
   color: #ffffff;
   display: block;
   max-width: 496px;
+  margin-left: 316px;
 }
 
 .button {
@@ -135,6 +135,8 @@ li {
   min-width: 169px;
   border-radius: 4px;
   height: 56px;
+  display: block;
+  margin-left: 466px;
 }
 
 .button:hover,
@@ -172,6 +174,10 @@ li {
 .section-three {
   background-color: #f4f4fd;
   padding: 120px 0;
+}
+
+.hide-hdr-two {
+  visibility: hidden;
 }
 
 .team-card {
@@ -331,10 +337,6 @@ li {
   letter-spacing: 0.02em;
   max-width: 264px;
   padding-top: 16px;
-}
-
-.footer .container a {
-  display: inline-block;
 }
 
 /*футер-кінець*/
