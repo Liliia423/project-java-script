@@ -32,7 +32,6 @@ li {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  display: flex; /* Створюємо флекс-контейнер для логотипа у хедері */
   align-items: center; /*вирівнювання по вертикалі*/
   margin-right: 76px;
 }
@@ -80,6 +79,7 @@ li {
 .ad-links {
   display: flex; /* Створюємо флекс-контейнер для елементів адреси у хедері, padding-right: 40px замінюємо на gap */
   align-items: center;
+  gap: 40px;
 }
 
 .ad-links .link {
@@ -144,6 +144,7 @@ li {
 /*секція-1-кінець*/
 
 /*секція-2-початок*/
+
 .advantages-set {
   display: flex;
   flex-wrap: wrap;
@@ -181,7 +182,7 @@ li {
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-three .container .hdr-two {
+.hdr-two {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -241,7 +242,7 @@ li {
 /*секція-4-початок*/
 
 .item-section-four {
-  width: calc((100% - 48px)) / 3;
+  width: calc((100% - 48px) / 3);
 }
 
 .section-four .container .hdr-two {
@@ -275,7 +276,7 @@ li {
   object-fit: cover;
 }
 
-.h3-and-text-port {
+.h-and-text-port {
   display: flex;
   width: 360px;
   gap: 8px;
@@ -284,11 +285,6 @@ li {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-/*.portfolio-card {
-  display: flex;
-  flex-direction: column;
-}фотографія і опис */
 
 .card-proposition {
   display: flex;
@@ -337,6 +333,9 @@ li {
   padding-top: 16px;
 }
 
+.footer .container .logo {
+  display: inline-block;
+}
 /*футер-кінець*/
 
 .container {
@@ -346,6 +345,8 @@ li {
   margin-left: 141px;
   margin-right: 141px;
   display: flex;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .container style {
