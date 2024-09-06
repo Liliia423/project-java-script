@@ -168,16 +168,13 @@ li {
   background-color: #ffffff;
   padding: 120px 0;
 }
+
 /*секція-2-кінець*/
 
 /*секція-3-початок */
 .section-three {
   background-color: #f4f4fd;
   padding: 120px 0;
-}
-
-.hide-hdr-two {
-  visibility: hidden;
 }
 
 .team-card {
