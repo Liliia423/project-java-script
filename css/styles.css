@@ -34,6 +34,7 @@ li {
   color: #4d5ae5;
   align-items: center; /*вирівнювання по вертикалі*/
   margin-right: 76px;
+  display: inline-block;
 }
 
 .menu-links {
@@ -333,9 +334,9 @@ li {
   padding-top: 16px;
 }
 
-.footer .container .logo {
-  display: inline-block;
-}
+/*.logo-disp {
+  
+}*/
 /*футер-кінець*/
 
 .container {
