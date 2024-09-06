@@ -32,12 +32,11 @@ li {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  align-items: center; /*вирівнювання по вертикалі*/
+  align-items: center;
   margin-right: 76px;
 }
 
 .menu-links {
-  /* Створюємо флекс-контейнер для елементів меню у хедері, padding-right: 40px замінюємо на gap */
   display: flex;
   align-items: center;
   gap: 40px;
@@ -51,10 +50,29 @@ li {
   display: block;
   padding: 24px 0;
 }
+/*
+.hdr-blk {
+  display: ;
+}
+*/
 
+/*контейнер навігації*/
 .nav-container {
   display: flex;
   align-items: center;
+  max-width: fit-content;
+}
+
+/*контейнер адреси*/
+.address {
+  font-style: normal;
+  max-width: fit-content;
+}
+
+.ad-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .menu-links .link:hover,
@@ -64,21 +82,11 @@ li {
   letter-spacing: 0.02em;
 }
 
-.address {
-  font-style: normal;
-}
-
 .menu-links .link:active {
   font-weight: 500;
   color: #404bbf;
   text-decoration: underline;
   letter-spacing: 0.02em;
-}
-
-.ad-links {
-  display: flex;
-  align-items: center;
-  gap: 40px;
 }
 
 .ad-links .link {
@@ -344,11 +352,25 @@ li {
 }
 
 .footer-text {
-  /* текст у футері */
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
   padding-top: 16px;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-stretch: 3%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d5ae5;
+  align-items: center;
+  margin-right: 76px;
+  display: inline-block;
 }
 
 /*футер-кінець*/
