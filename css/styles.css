@@ -352,9 +352,13 @@ li {
   color: #4d5ae5;
   align-items: center;
   margin-right: 76px;
-  display: inline-block;
   margin-bottom: 16px;
 }
+
+span {
+  display: inline-block;
+}
+
 /*футер-кінець*/
 
 .container {
