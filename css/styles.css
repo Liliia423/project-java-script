@@ -355,6 +355,10 @@ li {
   margin-bottom: 16px;
 }
 
+span {
+  display: inline-block;
+}
+
 /*футер-кінець*/
 
 .container {
