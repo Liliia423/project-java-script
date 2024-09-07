@@ -9,6 +9,21 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right: 141px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container style {
+  margin: 0 auto;
+}
+
 li {
   list-style-type: none;
 }
@@ -34,6 +49,16 @@ li {
   color: #4d5ae5;
   align-items: center;
   margin-right: 76px;
+}
+
+.logo-part-header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-stretch: 3%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2e2f42;
 }
 
 .menu-links {
@@ -302,42 +327,10 @@ li {
 /*секція-4-кінець*/
 
 /*футер-початок*/
-.footer .container .logo-footer {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.logo-part-header {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-stretch: 3%;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #2e2f42;
-}
-
-.logo-part-footer {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-stretch: 3%;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #f4f4fd;
-  display: inline-block;
-}
 
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-}
-
-.footer-text {
-  color: #f4f4fd;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-  padding-top: 16px;
 }
 
 .logo-footer {
@@ -353,25 +346,23 @@ li {
   align-items: center;
   margin-right: 76px;
   margin-bottom: 16px;
-}
-
-span {
   display: inline-block;
 }
 
+.logo-part-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-stretch: 3%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+  padding-top: 16px;
+}
 /*футер-кінець*/
-
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 141px;
-  margin-right: 141px;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
-.container style {
-  margin: 0 auto;
-}
