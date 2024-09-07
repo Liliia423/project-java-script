@@ -88,12 +88,6 @@ li {
   letter-spacing: 0.02em;
 }
 
-/*оформлення хедера у рядок*/
-.hedr-item {
-  display: flex;
-  justify-content: space-between;
-}
-
 /*контейнер навігації*/
 .nav-container {
   display: flex;
