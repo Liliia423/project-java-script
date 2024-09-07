@@ -344,6 +344,7 @@ li {
   text-decoration: none;
   color: #4d5ae5;
   margin-bottom: 16px;
+  width: fit-content;
   display: inline-block;
 }
 
