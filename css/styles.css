@@ -302,7 +302,7 @@ li {
 /*секція-4-кінець*/
 
 /*футер-початок*/
-.footer .container .logo {
+.footer .container .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -353,6 +353,7 @@ li {
   align-items: center;
   margin-right: 76px;
   display: inline-block;
+  margin-bottom: 16px;
 }
 /*футер-кінець*/
 
