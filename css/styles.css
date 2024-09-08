@@ -333,6 +333,9 @@ li {
   padding: 100px 0;
 }
 
+.footer .container {
+  display: block;
+}
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -344,9 +347,6 @@ li {
   text-decoration: none;
   color: #4d5ae5;
   margin-bottom: 16px;
-}
-
-.container .logo-footer {
   display: inline-block;
 }
 
@@ -367,7 +367,4 @@ li {
   padding-top: 16px;
 }
 
-.logo-footer-inline {
-  display: inline-block;
-}
 /*футер-кінець*/
