@@ -344,7 +344,9 @@ li {
   text-decoration: none;
   color: #4d5ae5;
   margin-bottom: 16px;
-  width: fit-content;
+}
+
+.container .logo-footer {
   display: inline-block;
 }
 
@@ -363,5 +365,9 @@ li {
   letter-spacing: 0.02em;
   max-width: 264px;
   padding-top: 16px;
+}
+
+.logo-footer-inline {
+  display: inline-block;
 }
 /*футер-кінець*/
