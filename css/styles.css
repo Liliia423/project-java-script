@@ -267,6 +267,7 @@ li {
   font-stretch: 2%;
   font-weight: 500;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .h-and-text .text {
@@ -276,7 +277,6 @@ li {
 .h-and-text {
   display: flex;
   max-width: 264px;
-  gap: 8px;
   flex-direction: column;
   align-items: center;
   padding: 32px 0;
@@ -319,6 +319,7 @@ li {
   font-weight: 500;
   color: #2e2f42;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .text-port {
@@ -333,7 +334,6 @@ li {
 .h-and-text-port {
   display: flex;
   width: 360px;
-  gap: 8px;
   flex-direction: column;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
