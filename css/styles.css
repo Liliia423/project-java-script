@@ -179,6 +179,9 @@ li {
   min-width: 169px;
   border-radius: 4px;
   height: 56px;
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -256,6 +259,7 @@ li {
 
 .social-links {
   display: flex;
+  justify-content: center;
   gap: 24px;
   flex-shrink: 0;
   padding-top: 8px;
@@ -269,9 +273,13 @@ li {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-for-social-links:hover {
+.link-for-social-links:hover,
+.link-for-social-links:focus {
   background-color: #404bbf;
 }
 
@@ -410,6 +418,10 @@ li {
 
 /*футер-початок*/
 
+.link-for-social-links-footer .svg-icon {
+  fill: #f4f4fd;
+}
+
 .svg-icon {
   display: flex;
 }
@@ -433,9 +445,13 @@ li {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-for-social-links-footer:hover {
+.link-for-social-links-footer:hover,
+.link-for-social-links-footer:focus {
   background-color: #31d0aa;
 }
 
