@@ -74,18 +74,29 @@ li {
 
 .menu-links .link {
   font-weight: 500;
-  color: #2e2f42;
+  color: #404bbf;
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
   padding: 24px 0;
+  position: relative;
 }
 
-.menu-links .link:hover,
-.menu-links .link:focus {
+.menu-links .link:hover::after,
+.menu-links .link:focus::after {
   font-weight: 500;
   color: #404bbf;
   letter-spacing: 0.02em;
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-links .link:active {
@@ -116,6 +127,9 @@ li {
   color: #404bbf;
   text-decoration: none;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*контейнер навігації*/
@@ -179,14 +193,14 @@ li {
   min-width: 169px;
   border-radius: 4px;
   height: 56px;
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background-color: #404bbf;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*=============================секція-1-кінець=============================*/
 
@@ -244,7 +258,7 @@ li {
   background-color: #ffffff;
   padding: 120px 0;
 }
-/*секція-2-кінець*/
+/*=============================секція-2-кінець=============================*/
 
 /*=============================секція-3-початок=============================*/
 .section-three .container {
@@ -273,14 +287,14 @@ li {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-for-social-links:hover,
 .link-for-social-links:focus {
   background-color: #404bbf;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-for-social-links .svg-icon {
@@ -359,12 +373,48 @@ li {
   margin: 0 auto;
 }
 
+.p {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+}
+
+.img-decor {
+  position: relative;
+  overflow: hidden;
+}
+
+.hdr-three-port {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-stretch: 2%;
+  font-weight: 500;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
 .item-section-four {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-section-four:hover {
   box-shadow: 0px 1px 6px 0px rgb(46, 47, 66, 0.08);
+  transition-property: box-shadowr;
+  transition-duration: 250ms;
+
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #hov-shad-four .item-section-four:hover {
@@ -378,17 +428,6 @@ li {
 .section-four {
   background-color: #ffffff;
   padding: 120px 0;
-}
-
-.hdr-three-port {
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: left;
-  font-stretch: 2%;
-  font-weight: 500;
-  color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 .text-port {
@@ -414,9 +453,9 @@ li {
   row-gap: 48px;
   column-gap: 24px;
 }
-/*секція-4-кінець*/
+/*=============================секція-4-кінець=============================*/
 
-/*футер-початок*/
+/*=============================футер-початок=============================*/
 
 .link-for-social-links-footer .svg-icon {
   fill: #f4f4fd;
@@ -445,14 +484,14 @@ li {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-for-social-links-footer:hover,
 .link-for-social-links-footer:focus {
   background-color: #31d0aa;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hdr-four {
@@ -515,4 +554,4 @@ li {
   max-width: 264px;
 }
 
-/*футер-кінець*/
+/*=============================футер-кінець=============================*/
