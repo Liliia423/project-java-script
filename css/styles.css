@@ -80,6 +80,18 @@ li {
   display: block;
   padding: 24px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-links .link::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .menu-links .link:hover::after,
@@ -198,15 +210,12 @@ li {
   min-width: 169px;
   border-radius: 4px;
   height: 56px;
-  transition: #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background-color: #404bbf;
-  transition-property: #404bbf;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*=============================секція-1-кінець=============================*/
 
@@ -390,6 +399,8 @@ li {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-decor {
@@ -416,7 +427,6 @@ li {
 .item-section-four:hover {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   transition-property: box-shadowr;
-
   transform: translateY(0%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
