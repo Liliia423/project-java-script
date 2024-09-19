@@ -651,3 +651,41 @@ li {
 }
 
 /*=============================футер-кінець=============================*/
+
+/*========================модальне-вікно-початок=========================*/
+
+.modal-overlay {
+  background-color: rgb(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2px 4px 1px #31d0aa;
+  max-width: 480px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+/*p {
+  color: #404bbf;
+}*/
+/*========================модальне-вікно-кінець=========================*/
