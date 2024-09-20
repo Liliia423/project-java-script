@@ -23,10 +23,29 @@
       <div class="modal">
         <form class="form" name="feedback" autocomplete="off">
           <p>Leave your contacts and we will call you back</p>
-          <input type="text" name="username" />
-          <input type="tel" name="phone" />
-          <input type="email" name="email" />
-          <input type="text" name="comment" />
+          <label>
+            Name
+            <input type="text" name="username" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" />
+          </label>
+          <label class="form-label">
+            Comment
+            <textarea class="form-input" name="description" rows="5" placeholder="Text input"> </textarea>
+          </label>
+          <div>
+            <label>
+              <input type="checkbox" name="accept" />
+            </label>
+            <p>I accept the terms and conditions of the</p>
+            <a class="policy-link" href="">Privacy Policy</a>
+          </div>
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
