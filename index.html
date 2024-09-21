@@ -21,24 +21,31 @@
     <!--модальне-вікно-початок-->
     <div class="modal-overlay">
       <div class="modal">
-        <form class="form" name="feedback" autocomplete="off">
-          <p>Leave your contacts and we will call you back</p>
-          <label>
-            Name
-            <input type="text" name="username" />
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" />
-          </label>
-          <label class="form-label">
-            Comment
-            <textarea class="form-input" name="description" rows="5" placeholder="Text input"> </textarea>
-          </label>
+        <form class="modal-form" name="feedback" autocomplete="off">
+          <div class="close-icon">
+            <svg class="" width="24" height="24">
+              <use href=""></use>
+            </svg>
+          </div>
+          <p class="modal-form-title">Leave your contacts and we will call you back</p>
+          <div class="modal-inputs">
+            <label class="label-form">
+              Name
+              <input class="input-form" type="text" name="username" />
+            </label>
+            <label class="label-form">
+              Phone
+              <input class="input-form" type="tel" name="phone" />
+            </label>
+            <label class="label-form">
+              Email
+              <input class="input-form" type="email" name="email" />
+            </label>
+            <label class="label-form">
+              Comment
+              <textarea class="input-area" name="description" rows="" placeholder="Text input"> </textarea>
+            </label>
+          </div>
           <div>
             <label>
               <input type="checkbox" name="accept" />
