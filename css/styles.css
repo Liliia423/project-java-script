@@ -49,21 +49,29 @@ input {
   font-family: inherit;
 }
 
+.container-modal {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 .modal-overlay {
   display: flex;
   background-color: rgb(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
+
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
   width: 1440px;
   height: 672px;
   z-index: 999;
   justify-content: center;
-  /*align-items: center;*/
+
   opacity: 1;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
   background-position: center;
-  margin: 0 auto;
 }
 
 .modal-overlay.is-open {
@@ -81,15 +89,11 @@ input {
   overflow-y: auto;
   position: absolute;
   top: 80px;
+  display: flex;
+  padding: 24px;
 }
 
 .modal-form {
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  gap: 12px;
-  border: 1px solid #212121;
-  flex-direction: column;
 }
 
 .close-icon {
@@ -160,6 +164,8 @@ input {
   justify-content: left;
   gap: 8px;
   top: 464px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .input-wrapper {
@@ -231,7 +237,6 @@ input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 504px;
-  align-self: center;
 }
 
 .button:hover,
