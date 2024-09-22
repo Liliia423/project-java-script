@@ -43,215 +43,6 @@ img {
   display: block;
 }
 
-/*========================модальне-вікно-початок=========================*/
-
-input {
-  font-family: inherit;
-}
-
-.container-modal {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.modal-overlay {
-  display: flex;
-  background-color: rgb(46, 47, 66, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  align-items: center; /*центрування модального вікна*/
-  flex-direction: column;
-  z-index: 999;
-  justify-content: center;
-  opacity: 1;
-  pointer-events: none;
-  transition: opacity 250ms ease-in-out;
-  background-position: center;
-}
-
-.modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal {
-  background-color: #fcfcfc;
-  border-radius: 4px;
-  width: 408px;
-  height: 584px;
-  flex-shrink: 0;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  overflow-y: auto;
-  position: absolute;
-  top: 80px;
-  display: flex;
-  padding: 24px;
-}
-
-.modal-form {
-}
-
-.close-icon {
-  position: absolute;
-  top: 24px;
-  left: 360px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #e7e9fc;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-icon:hover,
-.close-icon:focus {
-  background-color: #404bbf;
-  fill: #ffffff;
-}
-
-.modal-icon-svg {
-  fill: #2e2f42;
-}
-
-.modal-form-title {
-  position: absolute;
-  top: 72px;
-  color: #2e2f42;
-  text-align: center;
-  /* Body Medium */
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
-}
-
-.modal-inputs {
-  position: absolute;
-  top: 112px;
-  display: flex;
-  width: 360px;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  gap: 8px;
-  color: var(--LIGHT-SLATE, #8e8f99);
-  /* Small Text */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px; /* 116.667% */
-  letter-spacing: 0.48px;
-}
-
-.policy {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  justify-content: left;
-  gap: 8px;
-  top: 464px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.input-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.modal-icon-svg-input {
-  position: absolute;
-  left: 16px;
-  align-self: center;
-}
-
-.input-form {
-  display: inline-block;
-  width: 360px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-}
-
-.input-area {
-  width: 360px;
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-}
-
-.policy-text {
-  color: var(--LIGHT-SLATE, #8e8f99);
-  /* Small Text */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px; /* 116.667% */
-  letter-spacing: 0.48px;
-}
-
-.policy-span {
-  color: var(--IRIS, #4d5ae5);
-  /* Link Text */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.48px;
-  text-decoration-line: underline;
-}
-
-.form-button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-stretch: 4%;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  font-family: inherit;
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #4d5ae5;
-  border: none;
-  width: 169px;
-  padding: 16px 32px;
-  border-radius: 4px;
-  height: 56px;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  top: 504px;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #404bbf;
-}
-
-input,
-textarea,
-button {
-  font-family: inherit;
-  line-height: inherit;
-}
-/*p {
-  color: #404bbf;
-}*/
-/*========================модальне-вікно-кінець=========================*/
-
 /*=============================хедер-початок=============================*/
 
 .page-header {
@@ -804,3 +595,202 @@ button {
 }
 
 /*=============================футер-кінець=============================*/
+
+/*========================модальне-вікно-початок=========================*/
+
+input {
+  font-family: inherit;
+}
+
+.modal-overlay {
+  background-color: rgb(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  justify-content: center; /*центрування модального вікна*/
+  align-items: center; /*центрування модального вікна*/
+  opacity: 1; /*дозволяє анімувати: показати/приховати modal-overlay*/
+  pointer-events: auto; /*дозволить модальному вікну і оверлею ігнорувати дії миші*/
+}
+/*
+  transition: opacity 250ms ease-in-out;
+  background-position: center;
+*/
+
+/*.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}*/
+
+.modal {
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  max-width: 408px;
+  max-height: 584px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2e2f42;
+}
+.close-icon:hover,
+.close-icon:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+.modal-icon-svg {
+  fill: #2e2f42;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.modal-form-title {
+  color: #2e2f42;
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.modal-form-inputs {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  gap: 8px;
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+}
+
+.input-form {
+  display: inline-block;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+}
+
+.input-area {
+  width: 360px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+}
+.policy {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: left;
+  gap: 8px;
+  top: 464px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.modal-icon-svg-input {
+  left: 16px;
+  align-self: center;
+}
+
+.policy-text {
+  color: var(--LIGHT-SLATE, #8e8f99);
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+}
+
+.policy-span {
+  color: var(--IRIS, #4d5ae5);
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+}
+
+.form-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-stretch: 4%;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  width: 169px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  height: 56px;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+*p {
+  color: #404bbf;
+}
+/*========================модальне-вікно-кінець=========================*/
