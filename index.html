@@ -390,6 +390,22 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-header-subscribe">Subscribe</p>
+          <div class="footer-send-email">
+            <div class="footer-input-block">
+              <input class="footer-input-container" name="footer-email" type="email" placeholder="E-mail" />
+            </div>
+
+            <button class="footer-button" type="submit">
+              Subscribe
+              <svg class="svg-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#footeremail"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -434,7 +450,7 @@
                 <input class="input-container" name="email" id="email" type="email" />
               </div>
             </div>
-            <div>
+            <div class="item-inputs">
               <label class="label-form">
                 Comment
                 <textarea class="modal-textarea" name="comment" placeholder="Text input"></textarea>
@@ -444,7 +460,7 @@
 
           <div class="checkbox-field">
             <input class="checkbox" type="checkbox" name="privacy" id="privacy" value="true" />
-            <label class="label" for="privacy">
+            <label class="label-checkbox" for="privacy">
               <span class="custom-checkbox visually-hidden">
                 <svg class="custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#checkbox-icon"></use>
@@ -455,7 +471,7 @@
               <a class="privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
-          <button class="form-button" type="submit">Send</button>
+          <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
