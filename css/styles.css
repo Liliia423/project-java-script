@@ -16,7 +16,6 @@ body {
   margin: 0 auto;
 }
 
-/*====скидання-дефолтних-стилів-початок====*/
 ul,
 ol {
   list-style-type: none;
@@ -33,7 +32,6 @@ h6,
 p {
   margin: 0;
 }
-/*====скидання-дефолтних-стилів-кінець====*/
 
 .text {
   letter-spacing: 0.02em;
@@ -43,7 +41,7 @@ img {
   display: block;
 }
 
-/*=============================хедер-початок=============================*/
+/*=============================header-start=============================*/
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -76,7 +74,7 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.5;
   text-decoration: none;
-  display: block; /*обов'язково для того, щоб працювали паддінги*/
+  display: block;
   padding: 24px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -119,11 +117,10 @@ img {
   text-decoration: underline;
 }
 
-/*меню-адреси-хедера-початок*/
+/*header-address-start*/
 .contacts {
   font-style: normal;
   max-width: fit-content;
-  /*margin-left: auto; можна задати замість space-beeween*/
 }
 .contacts-list {
   display: flex;
@@ -155,9 +152,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*меню-адреси-хедера-кінець*/
-
-/*логотип-хедера-початок*/
+/*header-logo-start*/
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -181,10 +176,8 @@ img {
   text-decoration: none;
   color: #2e2f42;
 }
-/*логотип-хедера-кінець*/
-/*=============================хедер-кінець=============================*/
 
-/*=============================секція-1-початок=============================*/
+/*=============================section-1-start=============================*/
 .section-one {
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -237,9 +230,8 @@ img {
 .button:focus {
   background-color: #404bbf;
 }
-/*=============================секція-1-кінець=============================*/
 
-/*=============================секція-2-початок=============================*/
+/*=============================section-2-start=============================*/
 
 .section-two .container {
   flex-direction: column;
@@ -293,9 +285,8 @@ img {
   background-color: #ffffff;
   padding: 120px 0;
 }
-/*=============================секція-2-кінець=============================*/
 
-/*=============================секція-3-початок=============================*/
+/*=============================section-3-start=============================*/
 .section-three .container {
   display: flex;
   flex-direction: column;
@@ -404,9 +395,7 @@ img {
   display: flex;
 }
 
-/*=============================секція-3-кінець=============================*/
-
-/*=============================секція-4-початок=============================*/
+/*=============================section-4-start=============================*/
 .section-four .container {
   display: flex;
   flex-direction: column;
@@ -460,10 +449,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*#hov-shad-four .item-section-four:hover {
-  box-shadow: 0px 1px 6px 0px rgb(46, 47, 66, 0.08), 0px 1px 1px 0px rgb(46, 47, 66, 0.16), 0px 2px 1px 0px rgb(46, 47, 66, 0.08);
-}*/
-
 .section-four .container .hdr-two {
   margin-bottom: 72px;
 }
@@ -496,9 +481,8 @@ img {
   row-gap: 48px;
   column-gap: 24px;
 }
-/*=============================секція-4-кінець=============================*/
 
-/*=============================футер-початок=============================*/
+/*=============================footer-start=============================*/
 
 .footer {
   background-color: #2e2f42;
@@ -594,7 +578,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*==============subscribe================*/
+/*==============footer-subscribe-start================*/
 
 .footer-subscribe {
   display: inline-block;
@@ -616,17 +600,6 @@ img {
   display: flex;
   gap: 24px;
 }
-
-/*.footer-input-block {
-  width: 264px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  display: inline-flex;
-  align-items: center;
-}*/
 
 .footer-input-container {
   border: none;
@@ -684,9 +657,8 @@ img {
   justify-items: center;
   align-items: center;
 }
-/*=============================футер-кінець=============================*/
 
-/*========================модальне-вікно-початок=========================*/
+/*========================modal-windows-start=========================*/
 
 .modal-overlay {
   position: fixed;
@@ -756,7 +728,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*============close-button-end=============*/
+/*============modal-title-start=============*/
 .modal-title {
   color: #2e2f42;
   font-family: Roboto;
@@ -897,19 +869,22 @@ input:focus .modal-input-icon {
   border-color: #4d5ae5;
 }
 
-/*=================checkbox=================*/
+/*=================checkbox-start=================*/
 .checkbox-field {
+  display: inline-flex;
   margin-bottom: 24px;
   /*display: inline-flex;
   align-items: center;*/
 }
 
-.checkbox {
+/*===defolt-checkbox===*/
+.defolt-checkbox {
   margin-right: 8px;
   width: 16px;
   height: 16px;
 }
 
+/*===text-in-label-checkbox===*/
 .label-checkbox {
   font-size: 12px;
   line-height: 1.17;
@@ -917,7 +892,15 @@ input:focus .modal-input-icon {
   color: #8e8f99;
 }
 
+.privacy-link {
+  color: #4d5ae5;
+  text-decoration-line: underline;
+}
+
 .custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -928,39 +911,26 @@ input:focus .modal-input-icon {
   justify-content: center;
   fill: transparent;
 }
-/*
-.visually-hidden-check {
-  position: absolute;
-  overflow: hidden;
-}
 
-.visually-hidden-check {
-  position: absolute;
-  overflow: hidden;
-}
-
-input:checked .custom-checkbox {
+.defolt-checkbox:checked + .label-checkbox > .custom-checkbox {
   background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
+  border: none;
 }
 
-.visually-hidden-check:checked .custom-checkbox {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
+/*===visually-hidden-examole===
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(-50%);
+  margin: -1px;
 }*/
-
-.privacy-link {
-  color: #4d5ae5;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.48px;
-  text-decoration-line: underline;
-}
 
 /*=================modal-button-bottom=================*/
 
