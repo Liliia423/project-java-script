@@ -668,8 +668,8 @@ img {
   height: 100vh;
   z-index: 999;
   display: flex;
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
   background-color: rgb(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -812,17 +812,9 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-/*.input-wrapper:hover {
-  border: 1px solid #4d5ae5;
-}*/
-
 .input-container:hover,
 .input-container:focus {
   border: 1px solid #4d5ae5;
-}
-
-.input-wrapper:hover svg {
-  fill: #4d5ae5;
 }
 
 .input-container:focus svg {
