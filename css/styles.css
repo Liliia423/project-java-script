@@ -668,14 +668,16 @@ img {
   height: 100vh;
   z-index: 999;
   display: flex;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   background-color: rgb(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -695,6 +697,11 @@ img {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay:not(.is-open) .modal {
+  transform: translate(-50%, -100%);
 }
 
 /*============close-button-start=============*/
@@ -792,7 +799,7 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/*============icon-for-modal-form-start=============*/
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -812,12 +819,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-.input-container:hover,
+/*.input-container:hover,*/
 .input-container:focus {
   border: 1px solid #4d5ae5;
 }
 
-.input-container:focus svg {
+.input-container:focus + svg {
   fill: #4d5ae5;
 }
 
