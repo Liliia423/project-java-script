@@ -714,7 +714,6 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon:hover,
@@ -796,10 +795,6 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-container:focus {
-  border-color: #4d5ae5;
-}
-
 .modal-input-icon {
   position: absolute;
   left: 16px;
@@ -812,14 +807,31 @@ img {
   margin-right: 4px;
 }
 
-input:focus .modal-input-icon {
-  fill: #4d5ae5;
-}
-
 .input-wrapper svg {
   cursor: pointer;
   fill: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrapper:hover {
+  border: 1px solid #4d5ae5;
+}
+
+.input-wrapper:hover svg {
+  fill: #4d5ae5;
+}
+
+/*
+.input-container:focus {
+  border-color: #4d5ae5;
+}
+
+input:focus .modal-input-icon {
+  fill: #4d5ae5;
+}
+
+input:focus svg {
+  fill: #4d5ae5;
 }
 
 input:hover .modal-input-icon,
@@ -827,17 +839,12 @@ input:focus .modal-input-icon {
   fill: #4d5ae5;
 }
 
-.input-wrapper:hover {
-  border: 1px solid #4d5ae5;
-}
-
 .input-container.modal-input-icon:focus {
   fill: #4d5ae5;
 }
-
-.input-container:focus svg {
+ .input-container:focus svg {
   fill: #4d5ae5;
-}
+}*/
 
 /*============comment-start=============*/
 .modal-form-inputs-comment {
