@@ -779,14 +779,14 @@ img {
 
 .input-wrapper {
   position: relative; /*важливеі властивість і значення*/
-  display: flex;
+  /*display: flex;
   align-items: center;
   margin-bottom: 8px;
   width: 360px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .input-container {
@@ -806,10 +806,10 @@ img {
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
+  /*display: flex;
   justify-items: center;
   align-items: center;
-  margin-right: 4px;
+  margin-right: 4px;*/
   fill: #2e2f42;
 }
 
