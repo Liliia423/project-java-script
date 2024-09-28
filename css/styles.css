@@ -233,10 +233,78 @@ img {
 
 /*=============================section-2-start=============================*/
 
-.section-two .container {
-  flex-direction: column;
-  margin: 0 auto;
+.section-two {
+  background-color: #ffffff;
+  /*padding: 120px 0;*/
+  padding: 96px 0;
 }
+
+.section-two .container {
+  display: flex;
+  /*flex-direction: column;*/
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.advantages-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+  /*gap: 24px;*/
+}
+
+.item .text {
+  color: #434455;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-set {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+
+  .item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages-set {
+    gap: 24px;
+  }
+
+  .item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/*.item {
+  width: 100%;
+}*/
+
+.item .text {
+  color: #434455;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+
+/*.section-two .container {
+  max-width: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}*/
 
 .icon-boxing {
   display: flex;
@@ -251,10 +319,16 @@ img {
   margin-bottom: 8px;
 }
 
-.advantages-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+.advantages-set .item .hdr-three {
+  text-align: center;
+  color: #2e2f42;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -270,21 +344,25 @@ img {
   overflow: hidden;
 }
 
-.item .hdr-three {
+/*.item .hdr-three {
   margin-bottom: 8px;
-}
+}*/
 
-.advantages-set .item {
+/*.item {
   width: calc((100% - 72px) / 4);
+}*/
+
+.item {
+  width: 100%;
 }
 
-.advantages-set .item .hdr-three {
+/*.advantages-set .item .hdr-three {
   text-align: left;
-}
-.section-two {
-  background-color: #ffffff;
-  padding: 120px 0;
-}
+}*/
+
+/*.advantages-set .item .hdr-three {
+  text-align: left;
+}*/
 
 /*=============================section-3-start=============================*/
 .section-three .container {
@@ -478,7 +556,7 @@ img {
 .card-proposition {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px;
+  row-gap: 48px; /*на макеті 40зч*/
   column-gap: 24px;
 }
 
