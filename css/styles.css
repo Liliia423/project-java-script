@@ -241,7 +241,7 @@ img {
 
 .section-two .container {
   display: flex;
-  /*flex-direction: column;*/
+  flex-direction: column;
   margin: 0 auto;
   min-width: 320px;
 }
@@ -290,6 +290,14 @@ img {
     row-gap: 72px;
   }
 
+  .team-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+
+    justify-content: center;
+  }
+
   .icon-boxing {
     position: absolute;
     width: 1px;
@@ -315,6 +323,10 @@ img {
   .item {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  .advantages-set .item .hdr-three {
+    text-align: left;
+  }
 }
 
 /*==MEDIA==for min-width-1158px===*/
@@ -325,6 +337,10 @@ img {
 
   .item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+  .section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   /* for desktop version */
@@ -393,10 +409,27 @@ img {
 }*/
 
 /*=============================section-3-start=============================*/
+
+.section-three {
+  background-color: #f4f4fd;
+  /*padding: 120px 0;*/
+  padding: 96p 0x;
+}
+
 .section-three .container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  min-width: 320px;
+}
+
+.team-card {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 24px;
+  /*gap: 24px;*/
 }
 
 .svg-icon {
@@ -433,15 +466,6 @@ img {
   fill: #f4f4fd;
 }
 
-.section-three {
-  background-color: #f4f4fd;
-  padding: 120px 0;
-}
-
-.team-card {
-  display: flex;
-}
-
 .item-section-three {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px 0px rgb(46, 47, 66, 0.08), 0px 1px 1px 0px rgb(46, 47, 66, 0.16), 0px 2px 1px 0px rgb(46, 47, 66, 0.08);
@@ -449,6 +473,18 @@ img {
 
 #hov-shad-three .item-section-three {
   box-shadow: 0px 1px 6px 0px rgb(46, 47, 66, 0.08), 0px 2px 1px 0px rgb(46, 47, 66, 0.08), 0px 1px 1px 0px rgb(46, 47, 66, 0.16);
+}
+
+.section-three .hdr-two {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-stretch: 2%;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .hdr-two {
@@ -462,7 +498,6 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-
 .peoples-photo {
   object-fit: cover;
 }
@@ -494,7 +529,6 @@ img {
 .team-card {
   display: flex;
   flex-direction: row;
-  gap: 24px;
 }
 
 .svg-icon {
