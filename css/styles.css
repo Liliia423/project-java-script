@@ -254,21 +254,35 @@ img {
   /*gap: 24px;*/
 }
 
+.icon-boxing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  max-width: 264px;
+  margin-bottom: 8px;
+}
+
 .advantages-set .item .hdr-three {
   text-align: center;
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.72px;
   margin-bottom: 8px;
 }
 
 .item .text {
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.32px;
 }
 
+/*==MEDIA==for min-width-320px===*/
 @media screen and (min-width: 320px) {
   .advantages-set {
     flex-direction: row;
@@ -290,11 +304,12 @@ img {
   }
 }
 
+/*==MEDIA==for min-width-768px===*/
 @media screen and (min-width: 768px) {
   .advantages-set {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 64px;
+    row-gap: 72px;
   }
 
   .item {
@@ -302,6 +317,7 @@ img {
   }
 }
 
+/*==MEDIA==for min-width-1158px===*/
 @media screen and (min-width: 1158px) {
   .advantages-set {
     gap: 24px;
@@ -311,34 +327,44 @@ img {
     flex-basis: calc((100% - 72px) / 4);
   }
 
-  /* for desktop version
+  /* for desktop version */
   .section-two .container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-  }*/
+  }
 
-  /* for desktop version
-.hdr-three {
+  .icon-boxing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    max-width: 264px;
+    margin-bottom: 9px;
+    position: relative;
+    overflow: visible;
+    clip-path: none;
+  }
+
+  .advantages-set .item .hdr-three {
+    color: #2e2f42;
+    font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-  }*/
-}
+    text-align: left;
+  }
 
-.icon-boxing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  max-width: 264px;
-  margin-bottom: 8px;
+  .item .text {
+    font-weight: 400;
+    letter-spacing: 0.32px;
+  }
 }
 
 .visually-hidden {
@@ -858,7 +884,7 @@ img {
 }
 
 .input-wrapper {
-  position: relative; /*важливеі властивість і значення*/
+  position: relative; /*важливі властивість і значення*/
   /*display: flex;
   align-items: center;
   margin-bottom: 8px;
