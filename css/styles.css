@@ -254,15 +254,42 @@ img {
   /*gap: 24px;*/
 }
 
-.item .text {
-  color: #434455;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
+.advantages-set .item .hdr-three {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.09em;
+  margin-bottom: 8px;
 }
+
+.item .text {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 320px) {
+  .advantages-set {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+
+  .icon-boxing {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantages-set {
     flex-direction: row;
@@ -284,37 +311,22 @@ img {
     flex-basis: calc((100% - 72px) / 4);
   }
 
+  /* for desktop version
   .section-two .container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-  }
+  }*/
 
-  .hdr-three {
+  /* for desktop version
+.hdr-three {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-  }
+  }*/
 }
-
-.item .text {
-  color: #434455;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-}
-
-/*.section-two .container {
-  max-width: none;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-}*/
 
 .icon-boxing {
   display: flex;
@@ -326,18 +338,6 @@ img {
   border-radius: 4px;
   background-color: #f4f4fd;
   max-width: 264px;
-  margin-bottom: 8px;
-}
-
-.advantages-set .item .hdr-three {
-  text-align: center;
-  color: #2e2f42;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
   margin-bottom: 8px;
 }
 
