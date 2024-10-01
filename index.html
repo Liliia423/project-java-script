@@ -46,15 +46,28 @@
           </ul>
           
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class=" container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <ul>Social
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-    <!--<main>
+    <main>
       <section class="section-one">
         <div class="container container-section-one">
           <h1 class="header-section-one">Effective Solutions for Your Business</h1>
@@ -353,9 +366,9 @@
           </ul>
         </div>
       </section>
-    </main>-->
+    </main>
 
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-text-and-logo">
           <a class="logo-footer" href="./index.html">Web<span class="logo-part-footer">Studio</span></a>
@@ -413,22 +426,21 @@
         </div>
      
       </div>
-    </footer>-->
+    </footer>
 
     <!--модальне-вікно-початок-->
-
-    <!--<div class="modal-overlay" data-modal>
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <button class="close-icon" type="button" data-modal-close>
           <svg class="close-icon-svg" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>-->
+        <p class="modal-title">Leave your contacts and we will call you back</p>
     <!--форма-введення-даних-->
-    <!--<form class="modal-form" name="feedback" autocomplete="off">-->
+    <form class="modal-form" name="feedback" autocomplete="off">
     <!--перший-дочірній-елемент-форми-введення-даних-->
-    <!--<div class="modal-form-inputs">
+    <div class="modal-form-inputs">
             <label class="label-form" for="user-name">Name</label>
             <div class="input-wrapper">
               <input class="input-container" name="user-name" id="user-name" type="text" />
@@ -436,9 +448,9 @@
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </div>
-          </div>-->
+          </div>
     <!--другий-дочірній-елемент-форми-введення-даних-->
-    <!--<div class="modal-form-inputs">
+    <div class="modal-form-inputs">
             <label class="label-form" for="phone">Phone</label>
             <div class="input-wrapper">
               <input class="input-container" name="phone" id="phone" type="tel" />
@@ -446,9 +458,9 @@
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
-          </div>-->
+          </div>
     <!--третій-дочірній-елемент-форми-введення-даних-->
-    <!--<div class="modal-form-inputs">
+    <div class="modal-form-inputs">
             <label class="label-form" for="email">Email</label>
             <div class="input-wrapper">
               <input class="input-container" name="email" id="email" type="email" />
@@ -456,14 +468,14 @@
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
-          </div>-->
+          </div>
     <!--четвертий-дочірній-елемент-форми-введення-даних-->
-    <!--<div class="modal-form-inputs-comment">
+    <div class="modal-form-inputs-comment">
             <label class="label-form" for="user-comment">Comment</label>
             <textarea class="modal-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
-          </div>-->
+          </div>
     <!--п'ятий-дочірній-елемент-форми-введення-даних-->
-    <!--<div class="checkbox-field">
+    <div class="checkbox-field">
             <input class="defolt-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
             <label class="label-checkbox" for="user-privacy">
               <span class="custom-checkbox">
@@ -480,6 +492,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
