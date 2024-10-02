@@ -1335,6 +1335,9 @@ button {
 
 /*===text-in-label-checkbox===*/
 .label-checkbox {
+  display: flex; /*додано*/
+  gap: 8px; /*додано*/
+  align-items: center; /*додано*/
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1348,6 +1351,7 @@ button {
 
 .custom-checkbox {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -1365,12 +1369,6 @@ button {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
-}
-
-.mobile-policy {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 231px;
 }
 
 /*===visually-hidden-examole===
