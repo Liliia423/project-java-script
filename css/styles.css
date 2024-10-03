@@ -75,7 +75,7 @@ button {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.32;
   letter-spacing: 0.03em;
   font-stretch: 3%;
   font-weight: 700;
@@ -83,6 +83,7 @@ button {
   text-decoration: none;
   color: #4d5ae5;
   align-items: center;
+  padding: 16px 0;
 }
 
 .header-logo {
@@ -99,7 +100,6 @@ button {
 }
 
 .burger-btn {
-  padding: 16px 0;
   border: none;
   background-color: transparent;
 }
@@ -107,11 +107,16 @@ button {
 .burger-icon {
   display: block;
   fill: #2f2f37;
+  flex-shrink: 0;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .logo {
+    line-height: 1.17;
   }
 
   .header-nav {
@@ -934,7 +939,7 @@ button {
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   font-stretch: 3%;
   font-weight: 700;
@@ -1094,9 +1099,14 @@ button {
     max-width: 768px;
   }
 
+  .footer-text {
+    max-width: 264px;
+  }
+
   .footer-group {
     flex-direction: row;
     gap: 24px;
+    align-items: flex-start;
   }
 
   .footer-container {
@@ -1107,6 +1117,7 @@ button {
 
   .logo-footer {
     justify-content: left;
+    width: 264px;
   }
 
   .header-for-footer-socials {
@@ -1129,7 +1140,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .footer {
-    padding: 15px;
+    padding: 0 15px;
   }
 
   .container {
@@ -1146,6 +1157,7 @@ button {
     flex-direction: row;
     padding-left: 0;
     padding-right: 0;
+    gap: 80px;
   }
 }
 
