@@ -59,6 +59,7 @@
               <use href="./images/icons.svg#close"></use>
             </svg>
           </button>
+
           <nav class="mobile-nav">
             <ul class="mobile-nav-list">
               <li class="mobile-nav-item">
@@ -72,46 +73,49 @@
               </li>
             </ul>
           </nav>
-          <address class="mobile-contacts">
-            <ul class="mobile-contacts-list">
-              <li class="mobile-contacts-item">
-                <a class="current-mob mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <div class="mobile-menu-info">
+            <address class="mobile-contacts">
+              <ul class="mobile-contacts-list">
+                <li class="mobile-contacts-item">
+                  <a class="current-mob mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-contacts-item">
+                  <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+
+            <ul class="list-social-links-mobile-modal">
+              <li class="item-social-links-footer">
+                <a class="link-for-social-links-footer" href="https://www.instagram.com/" target="_blank">
+                  <svg class="svg-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-foot" />
+                  </svg>
+                </a>
               </li>
-              <li class="mobile-contacts-item">
-                <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="item-social-links-footer">
+                <a class="link-for-social-links-footer" href="https://www.twitter.com/" target="_blank">
+                  <svg class="svg-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#twitter-foot" />
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-links-footer">
+                <a class="link-for-social-links-footer" href="https://www.facebook.com/" target="_blank">
+                  <svg class="svg-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#facebook-foot" />
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social-links-footer">
+                <a class="link-for-social-links-footer" href="https://www.linkedin.com/" target="_blank">
+                  <svg class="svg-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin-foot" />
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-          <ul class="list-social-links-mobile-modal">
-            <li class="item-social-links-footer">
-              <a class="link-for-social-links-footer" href="https://www.instagram.com/" target="_blank">
-                <svg class="svg-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#instagram-foot" />
-                </svg>
-              </a>
-            </li>
-            <li class="item-social-links-footer">
-              <a class="link-for-social-links-footer" href="https://www.twitter.com/" target="_blank">
-                <svg class="svg-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#twitter-foot" />
-                </svg>
-              </a>
-            </li>
-            <li class="item-social-links-footer">
-              <a class="link-for-social-links-footer" href="https://www.facebook.com/" target="_blank">
-                <svg class="svg-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#facebook-foot" />
-                </svg>
-              </a>
-            </li>
-            <li class="item-social-links-footer">
-              <a class="link-for-social-links-footer" href="https://www.linkedin.com/" target="_blank">
-                <svg class="svg-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin-foot" />
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -335,12 +339,13 @@
           <ul class="card-proposition">
             <li class="item-section-four">
               <div class="img-decor">
-                <img class="portfolio-photos" src="./images/portfolio/1-1-banking-app.jpg" alt="Banking App photo" width="360" />
+                <div class="thumb">
+                  <img class="portfolio-photos" src="./images/portfolio/1-1-banking-app.jpg" alt="Banking App photo" width="360" />
+                </div>
                 <p class="app-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-
               <div class="h-and-text-port">
                 <h3 class="hdr-three-port">Banking App</h3>
                 <p class="text-port">App</p>
@@ -349,8 +354,9 @@
 
             <li id="hov-shad-four" class="item-section-four">
               <div class="img-decor">
-                <img class="portfolio-photos" src="./images/portfolio/1-2-cashless-payment.jpg" alt="Cashless Payment photo" width="360" />
-
+                <div class="thumb">
+                  <img class="portfolio-photos" src="./images/portfolio/1-2-cashless-payment.jpg" alt="Cashless Payment photo" width="360" />
+                </div>
                 <p class="app-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -363,7 +369,9 @@
 
             <li class="item-section-four">
               <div class="img-decor">
-                <img class="portfolio-photos" src="./images/portfolio/1-3-meditation-app.jpg" alt="Meditation App photo" width="360" />
+                <div class="thumb">
+                  <img class="portfolio-photos" src="./images/portfolio/1-3-meditation-app.jpg" alt="Meditation App photo" width="360" />
+                </div>
                 <p class="app-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -376,7 +384,9 @@
 
             <li class="item-section-four">
               <div class="img-decor">
-                <img class="portfolio-photos" src="./images/portfolio/2-1-taxi-service.jpg" alt="Taxi Service photo" width="360" />
+                <div class="thumb">
+                  <img class="portfolio-photos" src="./images/portfolio/2-1-taxi-service.jpg" alt="Taxi Service photo" width="360" />
+                </div>
                 <p class="app-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -389,7 +399,9 @@
 
             <li class="item-section-four">
               <div class="img-decor">
-                <img class="portfolio-photos" src="./images/portfolio/2-2-screen-illustrations.jpg" alt="Screen Illustrations photo" width="360" />
+                <div class="thumb">
+                  <img class="portfolio-photos" src="./images/portfolio/2-2-screen-illustrations.jpg" alt="Screen Illustrations photo" width="360" />
+                </div>
                 <p class="app-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
@@ -402,7 +414,9 @@
 
             <li class="item-section-four">
               <div class="img-decor">
-                <img class="portfolio-photos" src="./images/portfolio/2-3-online-courses.jpg" alt="Online Courses photo" width="360" />
+                <div class="thumb">
+                  <img class="portfolio-photos" src="./images/portfolio/2-3-online-courses.jpg" alt="Online Courses photo" width="360" />
+                </div>
                 <p class="app-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
